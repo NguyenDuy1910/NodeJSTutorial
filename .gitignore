@@ -1,0 +1,6 @@
+.vs code
+src/public/css
+node_modules
+package.json
+package-lock.json
+src/access.log
