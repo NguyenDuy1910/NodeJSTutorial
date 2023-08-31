@@ -38,6 +38,6 @@ app.get("/login", (req, res, next) => {
 //   res.render("form", { layout: false });
 // });
 
-// app.listen(port, () => {
-//   console.log(`http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
+});
