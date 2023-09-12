@@ -41,6 +41,7 @@ app.get("/signup", (req, res, next) => {
   res.render("signup", { layout: false });
 });
 
+<<<<<<< HEAD
 app.post("/signup", (req, res) => {
   const data = LogInCollection.create({
     name: req.body.name,
@@ -71,6 +72,29 @@ app.post("/signup", (req, res) => {
 app.post("/login", async (req, res) => {
   console.log(req.body.name);
   console.log(req.body.password);
+=======
+//   const data = {
+//     name: req.body.name,
+//     password: req.body.password,
+
+//   const checking = await LogInCollection.findOne({ name: req.body.name });
+
+//   try {
+//     if (
+//       checking.name === req.body.name &&
+//       checking.password === req.body.password
+//     ) {
+//       res.redirect("login");
+//     } else {
+//       res.send("Information is not find");
+//     }
+//   } catch {
+//     res.send("wrong inputs");
+//   }
+// });
+res.redirect("login");
+app.post("/login", async (req, res) => {
+>>>>>>> 0940f9e1c503fae922f4a19c70583b344bc4fcd1
   try {
     const check = await LogInCollection.findOne({ name: req.body.name });
 
